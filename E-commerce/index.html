@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haldiram Wholesaler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Haldiram Products</h1>
+    <button id="bagBtn">👜 Bag (<span id="bagCount">0</span>)</button>
+  </header>
+
+  <main>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://www.haldirams.com/media/catalog/product/cache/6/image/500x500/9df78eab33525d08d6e5fb8d27136e95/b/h/bhujia-sev.jpg" alt="Bhujia Sev">
+        <h3>Bhujia Sev</h3>
+        <p>₹30</p>
+        <button class="addToBag">Add to Bag</button>
+      </div>
+      <div class="product">
+        <img src="https://www.haldirams.com/media/catalog/product/cache/6/image/500x500/9df78eab33525d08d6e5fb8d27136e95/k/h/khatta-meetha.jpg" alt="Khatta Meetha">
+        <h3>Khatta Meetha</h3>
+        <p>₹35</p>
+        <button class="addToBag">Add to Bag</button>
+      </div>
+      <div class="product">
+        <img src="https://www.haldirams.com/media/catalog/product/cache/6/image/500x500/9df78eab33525d08d6e5fb8d27136e95/r/a/rajma-rasila.jpg" alt="Rajma Rasila">
+        <h3>Rajma Rasila</h3>
+        <p>₹60</p>
+        <button class="addToBag">Add to Bag</button>
+      </div>
+      <!-- Add more products as needed -->
+    </div>
+  </main>
+
+  <!-- Bag Sidebar -->
+  <div id="bagModal" class="bag-modal">
+    <div class="bag-content">
+      <h2>👜 Your Bag</h2>
+      <div id="bagItems"></div>
+      <p id="totalPrice">Total: ₹0</p>
+      <button onclick="closeBag()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
