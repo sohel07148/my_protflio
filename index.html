@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sohel Shaikh | Web Designer</title>
+  <meta name="description" content="Professional portfolio of Sohel Shaikh, Web Designer & Frontend Developer">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1 data-aos="fade-up">Hi, I'm Sohel Shaikh</h1>
+      <p data-aos="fade-up" data-aos-delay="200">Web Designer & Frontend Developer</p>
+      <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+        <button class="btn btn-outline" id="hireMeBtn">Hire Me</button>
+        <a href="/Resume.docx" download class="btn btn-outline">Download Resume</a>
+      </div>
+    </div>
+
+    <!-- Hire Me Modal -->
+    <div id="hireModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close-btn">&times;</span>
+        <h2>Get In Touch</h2>
+        <form action="https://formspree.io/f/maneolay" method="POST" class="hire-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Email Address" required />
+          <input type="tel" name="phone" placeholder="Phone Number" />
+          <textarea name="message" rows="4" placeholder="Your Project Details" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="about" id="about" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>I'm a Web Developer Intern at The Bunny Tech, passionate about building clean, responsive, and user-friendly web interfaces using HTML, CSS, JavaScript, and ReactJS. I'm currently pursuing a BCA in Web Design and Development in Aurangabad, Maharashtra.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills" data-aos="fade-up">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+        <div class="core-skills">
+          <h3>Core Skills</h3>
+          <ul class="core-skill-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>ReactJS</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+        
+        <div class="extra-skills" style="display: none;">
+          <h3>Additional Skills</h3>
+          <ul class="full-skill-list">
+            <li>Tailwind CSS</li>
+            <li>Electron.js</li>
+            <li>WordPress</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>VS Code</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+        
+        <button class="btn btn-outline see-more-btn">See More Skills</button>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects" data-aos="fade-up">
+      <h2>My Projects</h2>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <img src="./img/portfolio-preview.png" alt="Portfolio Website Screenshot" class="project-img" loading="lazy">
+        <p>A modern and responsive personal portfolio website designed with HTML, CSS, and animations to showcase my work and skills.</p>
+        <div class="project-links">
+          <a href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          <a href="https://github.com/sohel07148/portfolio" class="btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      
+      <!-- Add more projects here -->
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" data-aos="fade-up">
+      <h2>What People Say</h2>
+      <div class="testimonial">
+        <blockquote>
+          "Sohel is a passionate and creative designer. He brought fresh energy to our frontend projects."
+          <footer>— The Bunny Tech Lead</footer>
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact" data-aos="fade-up">
+    <h2>Let's Connect</h2>
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i> <a href="mailto:sohelshaikh07148@gmail.com">sohelshaikh07148@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i> +91 86248 99967</p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/sohel07148" target="_blank" rel="noopener noreferrer">github.com/sohel07148</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/sohel-shaikh-4672a42aa" target="_blank" rel="noopener noreferrer">linkedin.com/in/sohel-shaikh</a></p>
+    </div>
+    <div class="social-icons">
+      <a href="https://github.com/sohel07148" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/sohel-shaikh-4672a42aa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/sohel_07148" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <footer data-aos="fade-up">
+    <p>&copy; <span id="year"></span> Sohel Shaikh. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+  
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+    
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
