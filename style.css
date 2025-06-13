@@ -339,3 +339,27 @@
     padding: 0.8rem;
   }
 }
+
+/* Disable scroll when modal is open */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* Animate modal */
+.modal-content {
+  transform: scale(0.95);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal.show .modal-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Mobile padding for modal */
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 1.5rem 1rem;
+  }
+}
